@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
 import admin from "./firebase-admin.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
@@ -44,4 +47,4 @@ app.use("/create-user", async (req, res, next) => {
   }
 });
 
-app.listen(5000);
+app.listen(process.env.PORT);
