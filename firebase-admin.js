@@ -14,7 +14,8 @@ const firebaseConfig = {
   auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
   client_x509_cert_url:
     "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qpuws%40inacademy-e6a28.iam.gserviceaccount.com",
-}(async () => {
+};
+(async () => {
   try {
     await admin.initializeApp({
       credential: admin.credential.cert(firebaseConfig),
