@@ -15,16 +15,21 @@ const firebaseConfig = {
   client_x509_cert_url:
     "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qpuws%40inacademy-e6a28.iam.gserviceaccount.com",
 };
-(async () => {
-  try {
-    await admin.initializeApp({
-      credential: admin.credential.cert(firebaseConfig),
-    });
-  } catch (error) {
-    if (!/already exists/u.test(error.message)) {
-      console.error("Firebase admin initialization error", error.stack);
-    }
-  }
-})();
+
+admin.initializeApp({
+  credential: admin.credential.cert(firebaseConfig),
+});
+
+// (async () => {
+//   try {
+//     await admin.initializeApp({
+//       credential: admin.credential.cert(firebaseConfig),
+//     });
+//   } catch (error) {
+//     if (!/already exists/u.test(error.message)) {
+//       console.error("Firebase admin initialization error", error.stack);
+//     }
+//   }
+// })();
 
 export default admin;
