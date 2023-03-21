@@ -25,7 +25,6 @@ app.use("/create-user", async (req, res, next) => {
     const user = await admin.auth().createUser({
       email: email,
       password: password,
-      displayName: displayName,
     });
 
     await admin.auth().setCustomUserClaims(user.uid, {
