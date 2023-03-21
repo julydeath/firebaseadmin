@@ -1,0 +1,29 @@
+{
+  "name": "firebaseadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julydeath/firebaseadmin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julydeath/firebaseadmin/issues"
+  },
+  "homepage": "https://github.com/julydeath/firebaseadmin#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
